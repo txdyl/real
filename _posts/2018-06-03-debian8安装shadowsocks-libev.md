@@ -6,7 +6,6 @@ author: "starry"
 categories: Clutter
 permalink: 2018/04/06/11/
 ---
- <link rel="stylesheet" href="{{ "/css/github.css" | prepend: site.baseurl }}">
 <code>apt update
 apt install shadowsocks-libev</code>
 如果不能安装就<br>
