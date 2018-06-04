@@ -6,15 +6,15 @@ author: "starry"
 categories: Clutter
 permalink: 2018/04/06/11/
 ---
+ <link rel="stylesheet" href="{{ "/css/github.css" | prepend: site.baseurl }}">
 <code>apt update
 apt install shadowsocks-libev</code>
-如果不能安装就
+如果不能安装就<br>
 <code>sh -c 'printf "deb http://deb.debian.org/debian jessie-backports main\n" &gt; /etc/apt/sources.list.d/jessie-backports.list'
 sh -c 'printf "deb http://deb.debian.org/debian jessie-backports-sloppy main" &gt;&gt; /etc/apt/sources.list.d/jessie-backports.list'
 apt update
 apt -t jessie-backports-sloppy install shadowsocks-libev
 </code>
-
 然后编辑配置文件
 <code>vim /etc/shadowsocks-libev/config.json</code>
 配置如下，端口为8838
