@@ -6,18 +6,18 @@ author: "starry"
 categories: Clutter
 permalink: 2018/04/06/11/
 ---
-<pre><code class="language-css">apt update
+<pre class="line-numbers"><code class="language-css">apt update
 apt install shadowsocks-libev</code></pre>
 如果不能安装就<br>
-<pre><code class="language-css">sh -c 'printf "deb http://deb.debian.org/debian jessie-backports main\n" &gt; /etc/apt/sources.list.d/jessie-backports.list'
+<pre class="line-numbers"><code class="language-css">sh -c 'printf "deb http://deb.debian.org/debian jessie-backports main\n" &gt; /etc/apt/sources.list.d/jessie-backports.list'
 sh -c 'printf "deb http://deb.debian.org/debian jessie-backports-sloppy main" &gt;&gt; /etc/apt/sources.list.d/jessie-backports.list'
 apt update
 apt -t jessie-backports-sloppy install shadowsocks-libev
 </code></pre>
 然后编辑配置文件
-<pre><code class="language-css">vim /etc/shadowsocks-libev/config.json</code></pre>
+<pre class="line-numbers"><code class="language-css">vim /etc/shadowsocks-libev/config.json</code></pre>
 配置如下，端口为8838
-<pre><code class="language-css">{
+<pre class="line-numbers"><code class="language-css">{
 "server":"0.0.0.0",
 "server_port":8388,
 "local_port":1080,
@@ -26,4 +26,4 @@ apt -t jessie-backports-sloppy install shadowsocks-libev
 "method":"aes-256-cfb"
 }</code></pre>
 然后重启shadowsocks-libev
-<pre><code class="language-css">systemctl restart shadowsocks-libev</code></pre>
+<pre class="line-numbers"><code class="language-css">systemctl restart shadowsocks-libev</code></pre>
