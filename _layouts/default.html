@@ -4,6 +4,14 @@
   {% include head.html %}
 
   <body>
+  
+  <div class="spinner" id="loading">
+  <div class="cube1"></div>
+  <div class="cube2"></div>
+  </div>
+  <script>
+$(document).ready(function(){$('#loading').hide();})
+  </script>
 
     {% include header.html %}
 
