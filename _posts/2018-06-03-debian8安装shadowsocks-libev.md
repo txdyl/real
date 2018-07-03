@@ -3,7 +3,7 @@ layout: post
 title:  "debian8安装shadowsocks-libev"
 date:   2018-06-03 12:36
 author: "starry"
-categories: Clutter
+tags: Course
 permalink: 2018/04/06/11/
 ---
 <pre class="line-numbers"><code class="language-css">apt update
