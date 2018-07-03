@@ -1,28 +1,9 @@
-<!DOCTYPE html>
-<html>
+---
+layout: base
+---
 
-  {% include head.html %}
+<div class="intro-header"></div>
 
-  <body>
-  
-  <div class="spinner" id="loading">
-  <div class="cube1"></div>
-  <div class="cube2"></div>
-  </div>
-  <script>
-$(document).ready(function(){$('#loading').hide();})
-  </script>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
-</html>
+<div role="main" class="container">
+  {{ content }}
+</div>
